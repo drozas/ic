@@ -1,0 +1,15 @@
+; Wed May 30 16:09:41 GMT+01:00 2007
+; 
+;+ (version "3.2.1")
+;+ (build "Build 365")
+
+([practica_ic_Instance_0] of  Coche
+
+	(caja_cambios "manual")
+	(combustible "gasolina")
+	(id 1)
+	(potencia 70)
+	(precio 11624))
+
+([practica_ic_Instance_1] of  Cliente
+)

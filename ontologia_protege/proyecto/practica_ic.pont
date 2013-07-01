@@ -1,0 +1,145 @@
+; Wed May 30 16:09:41 GMT+01:00 2007
+; 
+;+ (version "3.2.1")
+;+ (build "Build 365")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot sitio
+		(type STRING)
+;+		(value "ciudad" "campo")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot carroceria
+		(type STRING)
+;+		(value "normal" "familiar" "deportivo" "todo-terreno" "monovolumen" "pequeño" "furgoneta")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot potencia
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ocupacion
+		(type STRING)
+;+		(value "profesional" "particular")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot potenciaCliente
+		(type STRING)
+;+		(value "alto" "medio" "bajo")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot poderAdquisitivo
+		(type STRING)
+;+		(value "bajo" "medio" "alto")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot id
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot combustible
+		(type STRING)
+		(default "gasolina")
+;+		(value "gasolina" "diesel")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot precio
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot extras
+		(type STRING)
+;+		(value "pocos" "normal" "muchos")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot caja_cambios
+		(type STRING)
+		(default "manual")
+;+		(value "manual" "automatico")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot edad
+		(type STRING)
+;+		(value "Joven" "Mayor" "Viejo")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot uso
+		(type STRING)
+;+		(value "bajo" "medio" "alto")
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Coche
+	(is-a USER)
+	(role concrete)
+	(single-slot precio
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot carroceria
+		(type STRING)
+;+		(value "normal" "familiar" "deportivo" "todo-terreno" "monovolumen" "pequeño" "furgoneta")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot caja_cambios
+		(type STRING)
+		(default "manual")
+;+		(value "manual" "automatico")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot potencia
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot id
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot combustible
+		(type STRING)
+		(default "gasolina")
+;+		(value "gasolina" "diesel")
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Cliente
+	(is-a USER)
+	(role concrete)
+	(single-slot sitio
+		(type STRING)
+;+		(value "ciudad" "campo")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot edad
+		(type STRING)
+;+		(value "Joven" "Mayor" "Viejo")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot poderAdquisitivo
+		(type STRING)
+;+		(value "bajo" "medio" "alto")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot potenciaCliente
+		(type STRING)
+;+		(value "alto" "medio" "bajo")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot extras
+		(type STRING)
+;+		(value "pocos" "normal" "muchos")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot uso
+		(type STRING)
+;+		(value "bajo" "medio" "alto")
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ocupacion
+		(type STRING)
+;+		(value "profesional" "particular")
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
